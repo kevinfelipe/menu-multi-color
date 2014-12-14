@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu Multi Color</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/jquery.sliding_menu.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:http:// -->
+    <!--[if lt IE 9]>
+      <script src="https:http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https:http://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+    <!-- Menu -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#" href="#" class="dropdown-toggle" data-toggle="dropdown">Secciones<b class="caret"></b></a>
+            <li><a href="#">Sección 1</a></li>
+            <li><a href="#">Sección 2</a></li>
+            <li><a href="#">Sección 3</a></li>
+            <li class="dropdown-header">Sección 4</li>
+            <li><a href="#">Sección 4-1</a></li>
+            <li><a href="#">Sección 4-2</a></li>
+            </li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Contenido -->
+    <div class="row">
+      <div class="col-lg-12">
+
+    		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, repellat a repudiandae aut. Quisquam, animi explicabo sint enim molestiae minima at odio accusantium ullam aliquid rerum voluptatem mollitia porro aut!</div>
+    		<div>Quas repudiandae et ex nisi maiores recusandae incidunt obcaecati delectus hic ab! Consequatur, odio ipsum accusantium aspernatur temporibus eum sint officia aliquam reprehenderit possimus. Maxime rem quos dolorem error sapiente.</div>
+    		<div>Eos, eveniet, deleniti alias sint laudantium vitae incidunt porro quos suscipit similique doloribus odio perspiciatis iure nulla voluptate consequatur neque officiis accusantium nisi unde! Molestias, assumenda sapiente architecto voluptate cum!</div>
+    		<div>Ea, consectetur, illum, perferendis voluptas hic deleniti commodi dolorem officiis nostrum eos sequi ullam illo maxime tenetur quaerat. Totam, vero autem maiores numquam eaque harum recusandae temporibus adipisci minima nostrum.</div>
+    		<div>Porro, voluptatum, nulla, laudantium, adipisci voluptatem sint quisquam minima deserunt laborum quis dolore deleniti explicabo quae nesciunt recusandae fugit ab reiciendis assumenda tempora ut voluptatibus amet laboriosam. Porro, ad totam.</div>
+    		<div>Suscipit, ipsum a enim aliquam quia mollitia porro magnam quidem architecto maiores nobis incidunt! Sit, impedit, ex, laboriosam, cumque incidunt ab sed sunt eum maxime amet magnam repellat. Fugiat, possimus!</div>
+    		<div>Aperiam, eaque, qui nisi vero delectus ducimus expedita quia accusantium consequatur minima saepe laborum magnam alias quisquam fugiat reiciendis ullam praesentium excepturi perspiciatis eum. Enim, maxime debitis rerum est consectetur.</div>
+    		<div>Libero, expedita, in, aspernatur iure omnis eius odit ab unde nisi repudiandae veniam qui. Ipsum, fuga, repellat, suscipit, obcaecati officia officiis distinctio assumenda optio repellendus velit adipisci similique dolorum illum.</div>
+    		<div>Nulla, officiis assumenda reprehenderit numquam enim optio aut dolorum pariatur autem voluptatem eum iste esse error animi quae sequi sapiente ducimus perferendis. Eligendi, corporis magni accusantium vel exercitationem sapiente aperiam!</div>
+    		<div>Esse, quod, laudantium assumenda iusto quaerat ad veritatis ipsum eaque cupiditate accusantium. Incidunt, architecto ratione hic magnam alias quis temporibus minima consequatur accusantium atque tempora velit id qui possimus ad!</div>
+
+      </div>
+    </div>
+  </div>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" ></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="src/js/jquery.sliding_menu.js"></script>
+    <script src="src/menumulticolor.js"></script>
+    <script>
+    $(document).ready(function(){
+              $('#menu ul').sliding_menu_js({
+              		header_title:'Plugin Menu Multi Color !',
+              		header_logo: "http://placehold.it/250x120"
+              	});
+
+              $("#sliding_menu_js ul li").menuMultiColor({
+                 colors: ["#FCB414","#4169E1","#FFA07A","#98FB98","#DB7093"]
+              });
+    });
+    </script>
+  </body>
+</html>
